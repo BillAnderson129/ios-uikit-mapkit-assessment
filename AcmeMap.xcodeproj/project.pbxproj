@@ -23,6 +23,14 @@
 		929943B926CD5B4900B58B13 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 929943B826CD5B4900B58B13 /* OHHTTPStubs */; };
 		929943BB26CD5B4900B58B13 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 929943BA26CD5B4900B58B13 /* OHHTTPStubsSwift */; };
 		929943BD26CD5BB200B58B13 /* AcmeMapSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929943BC26CD5BB200B58B13 /* AcmeMapSpec.swift */; };
+		A9222C1C2700E99F001CCCFA /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9222C1B2700E99F001CCCFA /* MainViewModelTests.swift */; };
+		A9222C1E2700E9BC001CCCFA /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9222C1D2700E9BC001CCCFA /* DetailViewModelTests.swift */; };
+		A9222C202700E9D5001CCCFA /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9222C1F2700E9D5001CCCFA /* ServiceManagerTests.swift */; };
+		A9222C222700EA68001CCCFA /* AcmeMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9222C212700EA68001CCCFA /* AcmeMocks.swift */; };
+		A97F976326FE548C00B9E7F1 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F976226FE548C00B9E7F1 /* ServiceManager.swift */; };
+		A97F976526FE856500B9E7F1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F976426FE856500B9E7F1 /* MainViewModel.swift */; };
+		A97F976826FE86D000B9E7F1 /* FeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F976726FE86D000B9E7F1 /* FeatureCollection.swift */; };
+		A97F976C26FE8E8A00B9E7F1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F976B26FE8E8A00B9E7F1 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		9299438026CD43B000B58B13 /* AcmeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeMapTests.swift; sourceTree = "<group>"; };
 		9299438226CD43B000B58B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929943BC26CD5BB200B58B13 /* AcmeMapSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcmeMapSpec.swift; sourceTree = "<group>"; };
+		A9222C1B2700E99F001CCCFA /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		A9222C1D2700E9BC001CCCFA /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		A9222C1F2700E9D5001CCCFA /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
+		A9222C212700EA68001CCCFA /* AcmeMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcmeMocks.swift; sourceTree = "<group>"; };
+		A97F976226FE548C00B9E7F1 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		A97F976426FE856500B9E7F1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A97F976726FE86D000B9E7F1 /* FeatureCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollection.swift; sourceTree = "<group>"; };
+		A97F976B26FE8E8A00B9E7F1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				92992D9F26CD623A0048A18E /* GeneratedMocks.swift */,
+				A9222C212700EA68001CCCFA /* AcmeMocks.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -106,15 +123,13 @@
 		9299436826CD43B000B58B13 /* AcmeMap */ = {
 			isa = PBXGroup;
 			children = (
-				9299436926CD43B000B58B13 /* AppDelegate.swift */,
-				9299437226CD43B000B58B13 /* Assets.xcassets */,
-				92148EBC26FCC2FC00A8A14B /* Detail.storyboard */,
-				92148EBE26FCC54900A8A14B /* DetailViewController.swift */,
-				9299437726CD43B000B58B13 /* Info.plist */,
 				9299437426CD43B000B58B13 /* LaunchScreen.storyboard */,
-				9299436F26CD43B000B58B13 /* Main.storyboard */,
-				9299436D26CD43B000B58B13 /* MainViewController.swift */,
+				9299436926CD43B000B58B13 /* AppDelegate.swift */,
 				9299436B26CD43B000B58B13 /* SceneDelegate.swift */,
+				A97F976126FE543D00B9E7F1 /* Interface */,
+				A97F976626FE868000B9E7F1 /* GeoService */,
+				9299437726CD43B000B58B13 /* Info.plist */,
+				9299437226CD43B000B58B13 /* Assets.xcassets */,
 			);
 			path = AcmeMap;
 			sourceTree = "<group>";
@@ -124,6 +139,9 @@
 			children = (
 				92992D9E26CD62320048A18E /* Mocks */,
 				9299438026CD43B000B58B13 /* AcmeMapTests.swift */,
+				A9222C1B2700E99F001CCCFA /* MainViewModelTests.swift */,
+				A9222C1D2700E9BC001CCCFA /* DetailViewModelTests.swift */,
+				A9222C1F2700E9D5001CCCFA /* ServiceManagerTests.swift */,
 				929943BC26CD5BB200B58B13 /* AcmeMapSpec.swift */,
 				9299438226CD43B000B58B13 /* Info.plist */,
 			);
@@ -135,6 +153,28 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97F976126FE543D00B9E7F1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9299436F26CD43B000B58B13 /* Main.storyboard */,
+				9299436D26CD43B000B58B13 /* MainViewController.swift */,
+				A97F976426FE856500B9E7F1 /* MainViewModel.swift */,
+				92148EBC26FCC2FC00A8A14B /* Detail.storyboard */,
+				92148EBE26FCC54900A8A14B /* DetailViewController.swift */,
+				A97F976B26FE8E8A00B9E7F1 /* DetailViewModel.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		A97F976626FE868000B9E7F1 /* GeoService */ = {
+			isa = PBXGroup;
+			children = (
+				A97F976226FE548C00B9E7F1 /* ServiceManager.swift */,
+				A97F976726FE86D000B9E7F1 /* FeatureCollection.swift */,
+			);
+			path = GeoService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +319,10 @@
 				9299436A26CD43B000B58B13 /* AppDelegate.swift in Sources */,
 				9299436C26CD43B000B58B13 /* SceneDelegate.swift in Sources */,
 				92148EBF26FCC54900A8A14B /* DetailViewController.swift in Sources */,
+				A97F976826FE86D000B9E7F1 /* FeatureCollection.swift in Sources */,
+				A97F976326FE548C00B9E7F1 /* ServiceManager.swift in Sources */,
+				A97F976526FE856500B9E7F1 /* MainViewModel.swift in Sources */,
+				A97F976C26FE8E8A00B9E7F1 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9222C222700EA68001CCCFA /* AcmeMocks.swift in Sources */,
 				9299438126CD43B000B58B13 /* AcmeMapTests.swift in Sources */,
+				A9222C1E2700E9BC001CCCFA /* DetailViewModelTests.swift in Sources */,
 				92992DA026CD623A0048A18E /* GeneratedMocks.swift in Sources */,
+				A9222C202700E9D5001CCCFA /* ServiceManagerTests.swift in Sources */,
 				929943BD26CD5BB200B58B13 /* AcmeMapSpec.swift in Sources */,
+				A9222C1C2700E99F001CCCFA /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56G4CLYCRG;
 				INFOPLIST_FILE = AcmeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -463,6 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56G4CLYCRG;
 				INFOPLIST_FILE = AcmeMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (

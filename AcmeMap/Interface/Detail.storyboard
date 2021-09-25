@@ -22,11 +22,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearest locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-xU-bgE">
+                                            <rect key="frame" x="16" y="308" width="378" height="37"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bLz-jN-Kbf">
-                                            <rect key="frame" x="0.0" y="382" width="414" height="132"/>
+                                            <rect key="frame" x="0.0" y="361" width="414" height="174"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="132" id="EfB-5f-lbp"/>
+                                                <constraint firstAttribute="height" constant="174" id="EfB-5f-lbp"/>
                                             </constraints>
                                             <prototypes>
                                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailCell" textLabel="LCZ-FM-SAj" detailTextLabel="4yd-gY-LuA" style="IBUITableViewCellStyleValue1" id="7z5-bh-n8G">
@@ -60,18 +66,26 @@
                                                 <outlet property="dataSource" destination="Y6W-OH-hqX" id="wmY-IG-vS8"/>
                                             </connections>
                                         </tableView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearest locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-xU-bgE">
-                                            <rect key="frame" x="16" y="329" width="231.5" height="37"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXb-Af-EQT">
+                                            <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="7zg-Wf-SMQ"/>
+                                                <constraint firstAttribute="height" constant="40" id="qy2-c3-SF2"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="dismissAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NzS-da-HrK"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Z82-xU-bgE" firstAttribute="leading" secondItem="0Wn-uW-grt" secondAttribute="leading" constant="16" id="67j-bA-sDP"/>
                                         <constraint firstItem="bLz-jN-Kbf" firstAttribute="top" secondItem="Z82-xU-bgE" secondAttribute="bottom" constant="16" id="HAC-QB-Fjw"/>
+                                        <constraint firstAttribute="trailing" secondItem="rXb-Af-EQT" secondAttribute="trailing" constant="20" id="Unt-Iv-73W"/>
                                         <constraint firstItem="bLz-jN-Kbf" firstAttribute="centerY" secondItem="0Wn-uW-grt" secondAttribute="centerY" id="d9a-BK-0SO"/>
                                         <constraint firstItem="bLz-jN-Kbf" firstAttribute="leading" secondItem="0Wn-uW-grt" secondAttribute="leading" id="dgH-gI-1jA"/>
+                                        <constraint firstItem="rXb-Af-EQT" firstAttribute="top" secondItem="0Wn-uW-grt" secondAttribute="top" constant="20" id="gU9-gr-uHQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z82-xU-bgE" secondAttribute="trailing" constant="20" symbolic="YES" id="o7x-q7-RUF"/>
                                         <constraint firstAttribute="trailing" secondItem="bLz-jN-Kbf" secondAttribute="trailing" id="tNZ-hZ-wfX"/>
                                     </constraints>
                                 </view>
@@ -86,10 +100,13 @@
                             <constraint firstAttribute="bottom" secondItem="UOr-Zl-cU0" secondAttribute="bottom" id="Mkf-ok-Gud"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="bLz-jN-Kbf" id="O0t-7q-5AQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="-669.56521739130437" y="135.9375"/>
         </scene>
     </scenes>
 </document>
